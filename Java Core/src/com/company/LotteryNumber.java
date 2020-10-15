@@ -10,7 +10,7 @@ public class LotteryNumber {
         for(int i= 0; i< lotteryNumbers.length; i++){
             lotteryNumber = (int) (Math.floor(Math.random() * 45) + 1);
             for (int j = 0; j<lotteryNumbers.length; j++){
-                if(lotteryNumbers[j]==lotteryNumbers[i])
+                if(lotteryNumbers[j]==lotteryNumber)
                     lotteryNumber = (int) (Math.floor(Math.random() * 45) + 1);
             }
             lotteryNumbers[i]=lotteryNumber;
